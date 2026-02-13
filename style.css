@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff4d6d, #ff8fab);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.chat-container {
+    width: 380px;
+    height: 600px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 25px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.bot {
+    background: #ffffff33;
+}
+
+.user {
+    background: white;
+    color: #ff4d6d;
+    text-align: right;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.music-control {
+    position: absolute;
+    top: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.heart {
+    position: fixed;
+    top: -10px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.firework {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #fff, #ff4d6d, #ff8fab);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {transform: scale(0); opacity: 1;}
+    100% {transform: scale(4); opacity: 0;}
+}

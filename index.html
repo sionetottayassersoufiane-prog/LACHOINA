@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pour Toi ❤️ LACHOINA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="music-control">
+    <button onclick="toggleMusic()">🎵 Activer la musique</button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="Kadigne.mp3" type="audio/mp3">
+</audio>
+
+<div class="chat-container" id="chat">
+
+    <div class="message bot">
+        Coucou LACHOINA 👑❤️
+    </div>
+
+    <div class="message bot">
+        J’ai préparé quelque chose de spécial pour toi… 😌✨
+    </div>
+
+    <div class="choices" id="firstChoice">
+        <button onclick="firstAnswer(true)">Je t’écoute 🥰</button>
+        <button onclick="firstAnswer(false)">Je suis curieuse 😏</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
